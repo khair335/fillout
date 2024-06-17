@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <p className='text-center md:text-[32px] text-[23px]  font-normal text-white md:pt-14 pt-10'>Build the exact form you need, in minutes.</p>
 
-          <div className='mt-[72px] flex flex-col gap-[90px]'>
+          <div className='mt-[72px] flex flex-col lg:gap-[90px] gap-[24px]'>
             <div className='bg-tertiary px-[29.84px] pt-[29.84px] rounded-2xl flex lg:flex-row flex-col justify-between overflow-y-hidden xxl:gap-[68px] gap-5'>
               <div className='max-w-[555px] w-full pb-8'>
                 <h3 className='xxl:text-[32px] text-2xl text-black font-medium leading-[38.4px] pb-10'>Collect the right answers with 50+ customizable field types.</h3>
@@ -115,7 +115,7 @@ export default function Home() {
                   style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
                   className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
                   <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#FFFBEB] border-[#FFE4A0] border-[1.46px] flex justify-center items-center'>
-                    <IoCodeOutline  className='text-xl text-primary rotate-90' />
+                    <IoCodeOutline className='text-xl text-primary rotate-90' />
                   </div>
                   <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Dropdown</p>
                 </div>
@@ -123,7 +123,7 @@ export default function Home() {
                   style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
                   className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
                   <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#FFFBEB] border-[#FFE4A0] border-[1.46px] flex justify-center items-center'>
-                    <HiDocumentSearch  className='text-2xl text-primary' />
+                    <HiDocumentSearch className='text-2xl text-primary' />
                   </div>
                   <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Submission</p>
                 </div>
@@ -140,10 +140,10 @@ export default function Home() {
 
               </div>
             </div>
-            <div className='flex lg:flex-row flex-col justify-between items-stretch gap-[8px]'>
-              <div className='bg-tertiary  rounded-2xl px-[29.84px] pt-[29.84px] xxl:max-w-[603px] lg:max-w-[485px] max-w-full w-full flex-1'>
+            <div className='flex lg:flex-row flex-col justify-between items-stretch lg:gap-[8px] gap-[24px]'>
+              <div className='bg-tertiary  rounded-2xl px-[29.84px] pt-[29.84px] xxl:max-w-[603px] lg:max-w-[45%] max-w-full w-full flex-1 lg:overflow-y-clip  overflow-y-hidden'>
                 <h3 className='text-black  xxl:text-[32px] text-2xl font-medium leading-[38.4px] pr-20'>Compute prices, quiz scores, and dynamic variables with calculations.</h3>
-                <div className='flex items-center relative'>
+                <div className='flex items-center relative '>
                   <div className='xxl:max-w-[265.54px] xxl:min-w-[265.54px] lg:max-w-[153.92px] lg:min-w-[153.92px] max-w-full w-full relative z-[2]  bg-[#E9E9E9] px-[15px] pt-5 rounded-lg mt-9 pb-16 rounded-b-none '>
                     <div className='max-w-[26px] flex justify-center items-center w-full h-[26px] bg-[#8C3BF3] rounded absolute -right-2 -top-2 rotate-6'>
 
@@ -155,19 +155,19 @@ export default function Home() {
 
                       <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
                         <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
-                        <p className='text-[#64748B] text-sm font-normal'>0-50</p>
+                        <p className='text-[#64748B] text-[8.12px] lg:text-sm font-normal'>0-50</p>
                       </div>
                       <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
                         <div className='w-5 h-5 border-[5px] border-[#E9E9E9] rounded-full bg-[#64748B]'></div>
-                        <p className='text-[#64748B] text-sm font-normal'>50-200</p>
+                        <p className='text-[#64748B] text-[8.12px] lg:text-sm font-normal'>50-200</p>
                       </div>
                       <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
                         <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
-                        <p className='text-[#64748B] text-sm font-normal'>200-500</p>
+                        <p className='text-[#64748B] text-[8.12px] lg:text-sm font-normal'>200-500</p>
                       </div>
                       <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
                         <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
-                        <p className='text-[#64748B] text-sm font-normal'>500-More</p>
+                        <p className='text-[#64748B] text-[8.12px] lg:text-sm font-normal'>500-More</p>
                       </div>
                     </div>
                   </div>
@@ -184,18 +184,23 @@ export default function Home() {
                     <p className='text-[#8C3BF3] font-medium lg:text-[28.91px] text-[16.53px]'>Calculating...</p>
 
                   </div>
+                  <div className=' block lg:hidden w-[100%] h-full border-[1px] border-[#B7BBBE] rounded-lg border-l-0 border-b-0 top-[49%] absolute z-[1]'></div>
                 </div>
               </div>
-              <div className='bg-tertiary  rounded-2xl  pt-[29.84px] xxl:max-w-[603px] lg:max-w-[485px] max-w-full w-full  flex-1'>
+              <div className='bg-tertiary  rounded-2xl  pt-[29.84px] xxl:max-w-[603px] lg:max-w-[45%] max-w-full w-full  flex-1'>
                 <h3 className='text-black xxl:text-[32px] text-2xl px-[29.84px] font-medium leading-[38.4px] pr-20'>Dynamically show or hide questions, modify page logic, enforce validation, and more.</h3>
-                <div className='relative'>
-                  <Image
+
+                <div className='relative lg:h-[260px] h-auto'>
+                  <div className='lg:absolute relative top-0 bottom-0 right-[-19px] lg:h-[260px] h-auto left-0'>
+                    <Image
                     src={img1}
                     height="auto"
                     width="auto"
                     alt=''
                     className=''
                   />
+                </div>
+
                 </div>
               </div>
 
