@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'BLMelody';
+  src: url('../assets/font/BLMelody/BLMelody-Regular.woff2') format('woff2'),
+       url('../assets/font/BLMelody/BLMelody-Regular.woff') format('woff');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: 'BLMelodyMono-SemiBold';
+  src: url('../assets/font/BLMelody/BLMelodyMono-SemiBold.woff2') format('woff2'),
+       url('../assets/font/BLMelody/BLMelodyMono-SemiBold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

@@ -1,113 +1,209 @@
-import Image from "next/image";
-
+import Image from 'next/image';
+import img1 from '../assets/Screenshot_5 (1).png'
+import IconCollection from './IconCollection/IconCollection';
+import { FaAsterisk, FaCheck, FaCode, FaEquals, FaImage, FaToggleOff } from "react-icons/fa6";
+import { PiDotsThreeCircleFill } from "react-icons/pi";
+import { HiDocumentSearch, HiDocumentText, HiMail } from "react-icons/hi";
+import { RiNotification2Fill } from "react-icons/ri";
+import { IoCodeOutline } from "react-icons/io5";
+import { HiMiniSquares2X2 } from "react-icons/hi2";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className='mx-auto'>
+      <div className='bg-secondary w-full pt-[146px] pb-[160px]'>
+        <div className='max-w-[1432px] w-full xl:pl-[40px] md:pl-5 xxl:pl-[79.53px] pl-4 xl:pr-[33px] md:pr-5 xxl:pr-[63px] pr-5 mx-auto'>
+          <div className='w-full  mx-auto flex justify-center items-center'>
+            <h1 className='text-primary relative md:leading-[111.6px] leading-[49.92px] font-medium md:text-[124px] text-[48px] text-center'>
+              <span className='block  relative'>
+                <div className='md:max-w-[76px] max-w-[40px] flex justify-center items-center w-full md:h-[76px] h-[40px] rotate-12 md:top-[-35px] top-[-20px] md:left-[-45px] left-[-25px] bg-[#22C55E] rounded-md absolute'>
+                  <FaAsterisk className='text-white  text-5xl' />
+                </div>
+                Easy to use.</span>
+              <span className='block relative'>
+
+                Endlessly
+                <div className='md:max-w-[76px] max-w-[40px] w-full flex justify-center items-center md:h-[76px] h-[40px] -rotate-12 top-[0px] md:right-4 right-[-6px] bg-[#F7502B] rounded-md absolute'>
+                  <FaCode className='text-white font-semibold  text-5xl' />
+                </div></span>
+              <span className='block'>customizable</span>
+            </h1>
+
+          </div>
+          <p className='text-center md:text-[32px] text-[23px]  font-normal text-white md:pt-14 pt-10'>Build the exact form you need, in minutes.</p>
+
+          <div className='mt-[72px] flex flex-col gap-[90px]'>
+            <div className='bg-tertiary px-[29.84px] pt-[29.84px] rounded-2xl flex lg:flex-row flex-col justify-between overflow-y-hidden xxl:gap-[68px] gap-5'>
+              <div className='max-w-[555px] w-full pb-8'>
+                <h3 className='xxl:text-[32px] text-2xl text-black font-medium leading-[38.4px] pb-10'>Collect the right answers with 50+ customizable field types.</h3>
+                <p className='text-lg text-black leading-[25.2px]'>Collect the right answers with 50+ customizable field types.
+                  One question at a time or multiple questions per page you choose.</p>
+
+                <div className='mt-12 lg:flex hidden justify-start items-center xxl:gap-[30px] gap-3'>
+                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl xxl:max-w-[165px] max-w-[130px] w-full h-[162px] bg-white xxl:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
+                    <div className='xxl:max-w-[76px] max-w-[60px] flex justify-center items-center w-full xxl:h-[76px] h-[60px] border-[1px] border-[#00B09A] bg-[#17CCB6] rounded-lg'>
+                      <FaCheck className='text-white text-5xl' />
+                    </div>
+                    <p className='text-[#374151] text-[17px] font-medium leading-[10.09px]'>Checkbox</p>
+                  </div>
+                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl xxl:max-w-[165px] max-w-[130px] w-full h-[162px] bg-white xxl:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
+                    <div className='xxl:max-w-[76px] max-w-[60px] flex justify-center items-center w-full xxl:h-[76px] h-[60px] border-[1px] border-[#CFA12D] bg-primary rounded-lg'>
+                      <FaToggleOff className='text-white text-5xl' />
+                    </div>
+                    <p className='text-[#374151] text-[17px] font-medium leading-[10.09px]'>Checkbox</p>
+                  </div>
+                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl xxl:max-w-[165px]  max-w-[130px] w-full h-[162px] bg-white xxl:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
+                    <div className='xxl:max-w-[76px] max-w-[60px] w-full xxl:h-[76px] h-[60px] flex justify-center items-center  border-[1px] border-[#179C48] bg-[#22C55E] rounded-lg'>
+                      <FaImage className='text-white text-4xl' />
+                    </div>
+                    <p className='text-[#374151] text-[17px] font-medium leading-[10.09px]'>Checkbox</p>
+                  </div>
+                </div>
+              </div>
+              <div className='bg-[#e9e9e9] xxl:p-[65px] xl:p-3 p-[19px] xxl:pb-0 rounded-[10px] grid grid-cols-3 gap-[15px] -mb-8'>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#F0FDF4] border-[#BBF7D0] border-[1.46px] flex justify-center items-center'>
+                    <FaEquals className='text-xl text-[#22C55E]' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>Short Answer</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#F0FDF4] border-[#BBF7D0] border-[1.46px] flex justify-center items-center'>
+                    <PiDotsThreeCircleFill className='text-2xl text-[#22C55E]' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>Multiple choice</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#F0FDF4] border-[#BBF7D0] border-[1.46px] flex justify-center items-center'>
+                    <HiMail className='text-2xl text-[#22C55E]' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>Email Input</p>
+                </div>
+
+
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] xxl:px-[24.86px] px-[13.41px] xxl:py-[15.65px] py-[8.38px] bg-[#FFFFFFB2] backdrop-blur-[2px] bg-opacity-[.02] lg:scale-[1.82] scale-[1.7] lg:-translate-y-2 -translate-y-[8px] rotate-[7deg] lg:-translate-x-20 -translate-x-4 rounded-lg flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:max-w-[43.94px] max-w-[30px] w-full lg:h-[43.94px] h-[54.89px] font-Inter lg:rounded-lg rounded-[4.28px] bg-[#8C3BF3] text-white  flex justify-center items-center ' >
+                    H1
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>Heading</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#F8FAFC] border-[#E2E8F0] border-[1.46px] flex justify-center items-center'>
+                    <HiDocumentText className='text-2xl text-[#64748B]' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Paragraph</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#F8FAFC] border-[#E2E8F0] border-[1.46px] flex justify-center items-center'>
+                    <RiNotification2Fill className='text-xl text-[#64748B]' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Banner</p>
+                </div>
+
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#FFFBEB] border-[#FFE4A0] border-[1.46px] flex justify-center items-center'>
+                    <IoCodeOutline  className='text-xl text-primary rotate-90' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Dropdown</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#FFFBEB] border-[#FFE4A0] border-[1.46px] flex justify-center items-center'>
+                    <HiDocumentSearch  className='text-2xl text-primary' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Submission</p>
+                </div>
+                <div
+                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
+                  className='xxl:max-w-[117.33px] lg:max-w-[73px] max-w-[62.82px] w-full lg:h-[120.34px] h-[64.44px] lg:px-[24.86px] px-[13.41px] lg:py-[15.65px] py-[8.38px] bg-white lg:rounded-lg rounded-[4.28px] flex flex-col justify-center items-center lg:gap-[20px] gap-[5px]'>
+                  <div className='lg:w-[43.94px] w-[23.53px] lg:h-[43.94px] h-[23.53px] rounded-[5.86px] bg-[#FFFBEB] border-[#FFE4A0] border-[1.46px] flex justify-center items-center'>
+                    <HiMiniSquares2X2 className='text-xl text-primary' />
+                  </div>
+                  <p className='lg:text-[13.92px] text-[7.46px] text-[#374151] font-medium lg:leading-[13.92px] leading-[7.46px] text-center'>  Choice Matrix</p>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div className='flex lg:flex-row flex-col justify-between items-stretch gap-[8px]'>
+              <div className='bg-tertiary  rounded-2xl px-[29.84px] pt-[29.84px] xxl:max-w-[603px] lg:max-w-[485px] max-w-full w-full flex-1'>
+                <h3 className='text-black  xxl:text-[32px] text-2xl font-medium leading-[38.4px] pr-20'>Compute prices, quiz scores, and dynamic variables with calculations.</h3>
+                <div className='flex items-center relative'>
+                  <div className='xxl:max-w-[265.54px] xxl:min-w-[265.54px] lg:max-w-[153.92px] lg:min-w-[153.92px] max-w-full w-full relative z-[2]  bg-[#E9E9E9] px-[15px] pt-5 rounded-lg mt-9 pb-16 rounded-b-none '>
+                    <div className='max-w-[26px] flex justify-center items-center w-full h-[26px] bg-[#8C3BF3] rounded absolute -right-2 -top-2 rotate-6'>
+
+                      <HiDocumentText className='text-white' />
+
+                    </div>
+                    <h4 className='text-lg font-semibold text-[#64748B] text-center '>Number of Employees</h4>
+                    <div className='mt-4 flex flex-col gap-[10px] relative'>
+
+                      <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
+                        <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
+                        <p className='text-[#64748B] text-sm font-normal'>0-50</p>
+                      </div>
+                      <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
+                        <div className='w-5 h-5 border-[5px] border-[#E9E9E9] rounded-full bg-[#64748B]'></div>
+                        <p className='text-[#64748B] text-sm font-normal'>50-200</p>
+                      </div>
+                      <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
+                        <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
+                        <p className='text-[#64748B] text-sm font-normal'>200-500</p>
+                      </div>
+                      <div className='h-[34px] w-full bg-white rounded-lg flex justify-start items-center px-[10px] gap-[10px]'>
+                        <div className='w-5 h-5 border-[1px] border-[#E9E9E9] rounded-full bg-white'></div>
+                        <p className='text-[#64748B] text-sm font-normal'>500-More</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='h-[3px] lg:block hidden w-[58%] bg-[#B7BBBE] absolute z-[1]'>
+
+                  </div>
+                  <div
+                    style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B0526' }}
+                    className='border-[#A96CF6] lg:border-[1px] border-[0.58px] lg:rounded-2xl rounded-[9.27px] px-[10px] relative z-[2] flex gap-3 lg:h-[74.84px] h-[48.9px] items-center lg:max-w-[272.65px] max-w-[160.28px] w-full lg:translate-x-12 -translate-x-8 bg-[#E4DDFD] -rotate-2'
+                  >
+                    <div className='lg:max-w-[55.24px] lg:min-w-[55.24px] max-w-[32.02px] min-w-[32.02px]   w-full lg:h-[53.46px] h-[30.99px] bg-[#8C3BF3] border-[1px] border-[#A96CF6] flex  justify-center items-center rounded-[4.64px] lg:rounded-lg text-center text-white lg:text-[35.64px] text-[20.66px] font-medium'>
+                      %
+                    </div>
+                    <p className='text-[#8C3BF3] font-medium lg:text-[28.91px] text-[16.53px]'>Calculating...</p>
+
+                  </div>
+                </div>
+              </div>
+              <div className='bg-tertiary  rounded-2xl  pt-[29.84px] xxl:max-w-[603px] lg:max-w-[485px] max-w-full w-full  flex-1'>
+                <h3 className='text-black xxl:text-[32px] text-2xl px-[29.84px] font-medium leading-[38.4px] pr-20'>Dynamically show or hide questions, modify page logic, enforce validation, and more.</h3>
+                <div className='relative'>
+                  <Image
+                    src={img1}
+                    height="auto"
+                    width="auto"
+                    alt=''
+                    className=''
+                  />
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
