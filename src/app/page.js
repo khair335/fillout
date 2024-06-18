@@ -12,8 +12,8 @@ import { HiMiniSquares2X2 } from "react-icons/hi2";
 export default function Home() {
   return (
     <div className='mx-auto'>
-      <div className='bg-secondary w-full pt-[146px] pb-[160px]'>
-        <div className='max-w-[1432px] w-full xl:pl-[40px] md:pl-5 xxl:pl-[79.53px] pl-4 xl:pr-[33px] md:pr-5 xxl:pr-[63px] pr-5 mx-auto'>
+      <div className='bg-secondary w-full pt-[146px] pb-[160px] overflow-hidden'>
+        <div className='max-w-[1432px] w-full xl:pl-[40px] md:pl-5 xxl:pl-[79.53px] pl-4 xl:pr-[33px] md:pr-8 xxl:pr-[63px] pr-5 mx-auto'>
           <div className='w-full  mx-auto flex justify-center items-center'>
             <h1 className='text-primary relative md:leading-[111.6px] leading-[49.92px] font-medium md:text-[124px] text-[48px] text-center'>
               <span className='block  relative'>
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
             <div className='flex lg:flex-row flex-col justify-between items-stretch lg:gap-[8px] gap-[24px]'>
-              <div className='bg-tertiary  rounded-2xl lg:px-[29.84px] px-5 lg:pt-[29.84px] pt-5 xxl:max-w-[603px] lg:max-w-[45%] max-w-full w-full flex-1 lg:overflow-y-clip  overflow-y-hidden'>
+              <div className='bg-tertiary  rounded-2xl lg:px-[29.84px] px-5 lg:pt-[29.84px] pt-5 xxl:max-w-[603px] lg:max-w-[48%] max-w-full w-full flex-1 lg:overflow-y-clip  overflow-y-hidden'>
                 <h3 className='text-black xxl:text-[32px] text-[23px] lg:px-[29.84px] px-0 font-medium lg:leading-[38.4px] leading-6 pr-3 lg:pr-20'>Compute prices, quiz scores, and dynamic variables with calculations.</h3>
                 <div className='flex items-center relative '>
                   <div className='xxl:max-w-[265.54px] xxl:min-w-[265.54px] lg:max-w-[153.92px] lg:min-w-[153.92px] min-w-[153.92px]  max-w-full w-full relative z-[2]  bg-[#E9E9E9] px-2 lg:px-[15px] lg:pt-5 pt-2 rounded-lg mt-9 pb-16 rounded-b-none '>
@@ -189,8 +189,8 @@ export default function Home() {
                   <div className=' block lg:hidden w-[100%] h-full border-[2px] right-0 border-[#B7BBBE] rounded-lg border-l-0 border-b-0 top-[49%] absolute z-[1]'></div>
                 </div>
               </div>
-              <div className='bg-tertiary  relative rounded-2xl  lg:pt-[29.84px] pt-5 xxl:max-w-[603px] lg:max-w-[45%] max-w-full w-full  flex-1 overflow-y-clip'>
-                <h3 className='text-black xxl:text-[32px] text-[23px] lg:px-[29.84px] px-5  font-medium lg:leading-[38.4px] leading-6 pr-[21px] lg:pr-20'>Dynamically show or hide questions, modify page logic, enforce validation, and more.</h3>
+              <div className='bg-tertiary  relative rounded-2xl  lg:pt-[29.84px] pt-5 xxl:max-w-[603px] lg:max-w-[48%] max-w-full w-full  flex-1 overflow-y-clip'>
+                <h3 className='text-black xxl:text-[32px] text-[23px] lg:px-[29.84px] px-5  font-medium lg:leading-[38.4px] leading-6 pr-[21px] lg:pr-20 md:max-w-[95%] lg:max-w-[100%]'>Dynamically show or hide questions, modify page logic, enforce validation, and more.</h3>
 
                 <div className='relative lg:h-[260px] h-auto lg:block hidden'>
                   <div className='lg:absolute relative top-0 bottom-0 right-[-56px] lg:h-[260px] h-auto left-0'>
