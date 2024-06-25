@@ -1,10 +1,14 @@
-import IconCollection from './IconCollection/IconCollection';
+import React from 'react';
 import { FaAsterisk, FaCheck, FaCode, FaEquals, FaImage, FaToggleOff } from "react-icons/fa6";
 import { PiDotsThreeCircleFill } from "react-icons/pi";
 import { HiDocumentSearch, HiDocumentText, HiMail } from "react-icons/hi";
 import { RiNotification2Fill } from "react-icons/ri";
 import { IoCodeOutline } from "react-icons/io5";
 import { HiMiniSquares2X2 } from "react-icons/hi2";
+import IconCard from './IconCard/IconCard';
+import FieldTypeCard from './FieldTypeCard/FieldTypeCard';
+import IconCollection from './IconCollection/IconCollection';
+
 export default function Home() {
   return (
     <div className='mx-auto'>
@@ -13,14 +17,14 @@ export default function Home() {
           <div className='w-full  mx-auto flex justify-center items-center'>
             <h1 className='text-primary relative custom-2:leading-[111px] leading-[50px] font-medium custom-2:text-[124px] text-[48px] text-center mb-[40px] custom-1:mb-[55px]'>
               <span className='block  relative'>
-                <div className='custom-2:max-w-[76px] max-w-[40px] flex justify-center items-center w-full custom-2:h-[76px] h-[40px] rotate-12 custom-2:top-[-35px] top-[-20px] custom-2:left-[-45px] left-[-22px] bg-[#22C55E] rounded custom-2:rounded-lg absolute'>
+                <div className='custom-2:max-w-[76px] max-w-[40px] flex justify-center items-center w-full custom-2:h-[76px] h-[40px] rotate-12 custom-2:top-[-35px] top-[-20px] custom-2:left-[-45px] left-[-22px] bg-custom-gray rounded custom-2:rounded-lg absolute'>
                   <FaAsterisk className='text-white text-2xl custom-2:text-5xl' />
                 </div>
                 Easy to use.</span>
               <span className='block relative'>
 
                 Endlessly
-                <div className='custom-2:max-w-[76px] max-w-[40px] w-full flex justify-center items-center custom-2:h-[76px] h-[40px] -rotate-12 top-[0px] custom-2:right-4 right-[-6px] bg-[#F7502B] rounded custom-2:rounded-lg absolute'>
+                <div className='custom-2:max-w-[76px] max-w-[40px] w-full flex justify-center items-center custom-2:h-[76px] h-[40px] -rotate-12 top-[0px] custom-2:right-4 right-[-6px] bg-custom-red rounded custom-2:rounded-lg absolute'>
                   <FaCode className='text-white font-semibold  text-2xl custom-2:text-5xl' />
                 </div></span>
               <span className='block'>customizable</span>
@@ -37,102 +41,21 @@ export default function Home() {
                   One question at a time or multiple questions per page you choose.</p>
 
                 <div className='mt-5 custom-2:mt-12 custom-2:flex hidden justify-start items-center custom-1:gap-[30px] gap-3'>
-                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl custom-1:max-w-[165px] max-w-[130px] w-full h-[162px] bg-white custom-1:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
-                    <div className='custom-1:max-w-[76px] max-w-[60px] flex justify-center items-center w-full custom-1:h-[76px] h-[60px] border-[1px] border-[#00B09A] bg-[#17CCB6] rounded-lg'>
-                      <FaCheck className='text-white text-2xl custom-2:text-5xl' />
-                    </div>
-                    <p className='text-[#374151] text-[17px] font-medium leading-[10px]'>Checkbox</p>
-                  </div>
-                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl custom-1:max-w-[165px] max-w-[130px] w-full h-[162px] bg-white custom-1:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
-                    <div className='custom-1:max-w-[76px] max-w-[60px] flex justify-center items-center w-full custom-1:h-[76px] h-[60px] border-[1px] border-[#CFA12D] bg-primary rounded-lg'>
-                      <FaToggleOff className='text-white text-2xl custom-2:text-5xl' />
-                    </div>
-                    <p className='text-[#374151] text-[17px] font-medium leading-[10px]'>Checkbox</p>
-                  </div>
-                  <div style={{ boxShadow: '7.96px 7.96px 15.91px 0px #241B051A' }} className='rounded-2xl custom-1:max-w-[165px]  max-w-[130px] w-full h-[162px] bg-white custom-1:p-[26px] p-3 flex flex-col justify-center items-center gap-5'>
-                    <div className='custom-1:max-w-[76px] max-w-[60px] w-full custom-1:h-[76px] h-[60px] flex justify-center items-center  border-[1px] border-[#179C48] bg-[#22C55E] rounded-lg'>
-                      <FaImage className='text-white text-2xl custom-2:text-4xl' />
-                    </div>
-                    <p className='text-[#374151] text-[17px] font-medium leading-[10px]'>Checkbox</p>
-                  </div>
+                  <IconCard icon={FaCheck} bgColor="bg-custom-green-3" borderColor="border-custom-black" label="Checkbox" />
+                  <IconCard icon={FaToggleOff} bgColor="bg-primary" borderColor="border-custom-yellow-4" label="Checkbox" />
+                  <IconCard icon={FaImage} bgColor="bg-custom-gray" borderColor="border-custom-green-4" label="Checkbox" />
                 </div>
               </div>
-              <div className='md:max-w-[455px] max-w-[250px]   ml-auto  bg-[#e9e9e9] custom-1:p-[35px] xl:p-3 p-[19px] custom-1:pb-0 rounded-[10px] grid grid-cols-3 gap-[15px] custom-2:-mb-10 -mb-9'>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[65px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[50px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#F0FDF4] border-[#BBF7D0] border-[1px] flex justify-center items-center'>
-                    <FaEquals className='text-sm custom-2:text-xl text-[#22C55E]' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>Short Answer</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[65px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#F0FDF4] border-[#BBF7D0] border-[1px] flex justify-center items-center'>
-                    <PiDotsThreeCircleFill className='text-base custom-2:text-2xl text-[#22C55E]' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>Multiple choice</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[64px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#F0FDF4] border-[#BBF7D0] border-[1px] flex justify-center items-center'>
-                    <HiMail className='text-base custom-2:text-2xl text-[#22C55E]' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>Email Input</p>
-                </div>
-
-
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-[107px] max-w-[63px] w-full custom-2:h-[120px] h-[64px] custom-1:px-[25px] px-[13px] custom-1:py-[16px] py-[8px] bg-[#FFFFFFB2] backdrop-blur-[2px] bg-opacity-[.02] custom-2:scale-[1.82] scale-[1.7] custom-2:-translate-y-2 -translate-y-[8px] rotate-[7deg] custom-2:-translate-x-20 -translate-x-4 custom-2:rounded-lg rounded-md flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:max-w-[44px] max-w-[30px] w-full custom-2:h-[44px] h-[30px] font-Inter custom-2:rounded-lg rounded-[2px] bg-[#8C3BF3] text-white  flex justify-center items-center ' >
-                    H1
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>Heading</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[64px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#F8FAFC] border-[#E2E8F0] border-[1px] flex justify-center items-center'>
-                    <HiDocumentText className='text-base custom-2:text-2xl text-[#64748B]' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>  Paragraph</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[64px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#F8FAFC] border-[#E2E8F0] border-[1px] flex justify-center items-center'>
-                    <RiNotification2Fill className='text-sm custom-2:text-xl text-[#64748B]' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>  Banner</p>
-                </div>
-
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[64px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#FFFBEB] border-[#FFE4A0] border-[1px] flex justify-center items-center'>
-                    <IoCodeOutline className='text-sm custom-2:text-xl text-primary rotate-90' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>  Dropdown</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[65px] custom-2:px-[25px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#FFFBEB] border-[#FFE4A0] border-[1px] flex justify-center items-center'>
-                    <HiDocumentSearch className='text-base custom-2:text-2xl text-primary' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>  Submission</p>
-                </div>
-                <div
-                  style={{ boxShadow: '0px 1.46px 2.93px -1.46px #0000001A', boxShadow: '0px 1.46px 4.39px 0px #0000001A' }}
-                  className='custom-1:max-w-[117px] custom-2:max-w-full max-w-full w-full custom-2:h-[120px] h-[64px] custom-2:px-[24px] px-[13px] custom-2:py-[16px] py-[8px] bg-white custom-2:rounded-lg rounded-[4px] flex flex-col justify-center items-center custom-2:gap-[20px] gap-[5px]'>
-                  <div className='custom-2:w-[44px] w-[24px] custom-2:h-[44px] h-[24px] rounded-[3px] custom-2:rounded-[6px] bg-[#FFFBEB] border-[#FFE4A0] border-[1px] flex justify-center items-center'>
-                    <HiMiniSquares2X2 className='text-base custom-2:text-xl text-primary' />
-                  </div>
-                  <p className='custom-2:text-[14px] text-[7px] text-[#374151] font-medium custom-2:leading-[14px] leading-[7px] text-center'>  Choice Matrix</p>
-                </div>
+              <div className='md:max-w-[455px] max-w-[250px]   ml-auto  bg-custom-white-3 custom-1:p-[35px] xl:p-3 p-[19px] custom-1:pb-0 rounded-[10px] grid grid-cols-3 gap-[15px] custom-2:-mb-10 -mb-9'>
+                <FieldTypeCard icon={FaEquals} IconClass="text-sm custom-2:text-xl text-custom-gray" bgColor="bg-white-green" borderColor="border-custom-gray-3" label="Short Answer" />
+                <FieldTypeCard icon={PiDotsThreeCircleFill} IconClass="text-base custom-2:text-2xl text-custom-gray" bgColor="bg-white-green" borderColor="border-custom-gray-3" label="Multiple choice" />
+                <FieldTypeCard icon={HiMail}  IconClass="text-base custom-2:text-2xl text-custom-gray" bgColor="bg-white-green" borderColor="border-custom-gray-3" label="Email Input" />
+                <FieldTypeCard  bgColor="bg-custom-gray-4" borderColor="border-custom-gray-5" label="Paragraph" />
+                <FieldTypeCard icon={HiDocumentText} IconClass="text-base custom-2:text-2xl text-custom-gray-2" bgColor="bg-custom-gray-4" borderColor="border-custom-gray-5" label="Paragraph" />
+                <FieldTypeCard icon={RiNotification2Fill} IconClass="text-sm custom-2:text-xl text-custom-gray-2" bgColor="bg-custom-gray-4" borderColor="border-custom-gray-5" label="Banner" />
+                 <FieldTypeCard icon={IoCodeOutline }IconClass="text-base custom-2:text-xl text-primary" bgColor="bg-custom-yellow-2" borderColor="border-custom-yellow-3" label="Dropdown" />
+                <FieldTypeCard icon={HiDocumentSearch} IconClass="text-base custom-2:text-2xl text-primary" bgColor="bg-custom-yellow-2" borderColor="border-custom-yellow-3" label=" Submission" />
+                <FieldTypeCard icon={HiMiniSquares2X2}IconClass="text-base custom-2:text-xl text-primary" bgColor="bg-custom-yellow-2" borderColor="border-custom-yellow-3" label="Choice Matrix" />
               </div>
             </div>
             <div className="flex justify-between w-full items-center flex-col custom-2:flex-row gap-6 md:gap-9">
@@ -284,5 +207,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
